@@ -22,27 +22,48 @@
     min-height: 500px;
 }
 
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+  }
 
-header .container{
-    height: 10vh;
+/*HEADER*/
+
+header{
+    background-color: #ffffff;
 }
+
+header .ct-container{
+    height: 7vh;
+}
+
+.logo-mobile{
+    width: 50px;
+}
+
+header nav div .fa-bell{
+    color: #FF8F00;
+}
+
+/*ALL DASHBOARD*/
 
 .second-ct-container{
-    height: 90vh;
+    height: 93vh;
 }
+
+/*SIDE MENU*/
 
 .second-ct-container .container-fluid.menu{
     height: 100%;
 }
 
-.second-ct-container .container-fluid.main{
-    height: 100%;
-}
-
-
-
-
 .side-menu{
     height: 100%;
-    width: 200px;   
+    width: 200px; 
+    background-image: url(../img/sidebar-bg.png);
+}
+
+/*MAIN*/
+
+.second-ct-container .container-fluid.main{
+    height: 100%;
 }

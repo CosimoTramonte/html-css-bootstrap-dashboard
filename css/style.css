@@ -1,0 +1,48 @@
+.debug{
+    background-color: rgba(0, 0, 255, 0.274);
+    border: 1px solid black;
+    min-height: 100px;
+}
+
+.debug1{
+    background-color: rgba(0, 0, 255, 0.274);
+    border: 1px solid black;
+    min-height: 300px;
+}
+
+.debug2{
+    background-color: rgba(0, 0, 255, 0.274);
+    border: 1px solid black;
+    min-height: 200px;
+}
+
+.debug3{
+    background-color: rgba(0, 0, 255, 0.274);
+    border: 1px solid black;
+    min-height: 500px;
+}
+
+
+header .container{
+    height: 10vh;
+}
+
+.second-ct-container{
+    height: 90vh;
+}
+
+.second-ct-container .container-fluid.menu{
+    height: 100%;
+}
+
+.second-ct-container .container-fluid.main{
+    height: 100%;
+}
+
+
+
+
+.side-menu{
+    height: 100%;
+    width: 200px;   
+}

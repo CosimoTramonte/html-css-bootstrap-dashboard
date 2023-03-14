@@ -30,10 +30,7 @@
 
 header{
     background-color: #ffffff;
-}
-
-header .ct-container{
-    height: 7vh;
+    height: 60px;
 }
 
 .logo-mobile{
@@ -47,7 +44,7 @@ header nav div .fa-bell{
 /*ALL DASHBOARD*/
 
 .second-ct-container{
-    height: 93vh;
+    height: calc(100vh - 60px);
 }
 
 /*SIDE MENU*/
@@ -58,12 +55,17 @@ header nav div .fa-bell{
 
 .side-menu{
     height: 100%;
-    width: 200px; 
     background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
 }
 
 /*MAIN*/
 
 .second-ct-container .container-fluid.main{
     height: 100%;
+}
+
+.blue-bar{
+    background-color: #1B72E8;
+    min-height: 50px;
 }

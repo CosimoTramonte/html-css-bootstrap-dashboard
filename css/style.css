@@ -1,3 +1,7 @@
+body{
+    min-width: 372px;
+}
+
 .fontAwesome {
     font-family: 'Helvetica', FontAwesome, sans-serif;
   }
@@ -15,6 +19,16 @@ header{
 
 header nav div .fa-bell{
     color: #FF8F00;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    position: absolute;
+    left: -102px;
+}
+
+.nav-item:hover,
+.nav-link:last-of-type:hover{
+    background-color: rgba(128, 128, 128, 0.445);
 }
 
 /*ALL DASHBOARD*/
@@ -65,3 +79,7 @@ header nav div .fa-bell{
     border-radius: 100%;
     font-size: 20px;
 }
+
+
+
+

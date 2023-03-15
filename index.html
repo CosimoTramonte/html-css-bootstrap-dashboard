@@ -23,10 +23,10 @@
     <header>
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
+                    <div class="container-fluid flex-nowrap">
                       <a class="navbar-brand d-none d-lg-block" href="#"><img src="img/logo.svg" alt="logo"></a>
                       <a class="navbar-brand d-block d-lg-none" href="#"><img class="logo-mobile" src="img/mobile-logo.png" alt="logo"></a>
-                      <form class="d-flex  w-75" role="search">
+                      <form class="d-flex  w-100" role="search">
                         <input class="form-control me-2 fontAwesome bg-light" type="search" placeholder=" &#xF002 Prova a cercare: Lezioni di Laravel" aria-label="Search">
                       </form>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,16 +47,30 @@
                             </a>
                           </li>
                           <li class="nav-item px-1">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <div class="dropdown">
+                              <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bell"></i>
-                            </a>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                              </ul>
+                            </div>
                           </li>
                         </ul>
                       </div>
                       <div class="mobile-item d-lg-none">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <div class="dropdown">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-bell"></i>
-                        </a>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </nav>
@@ -92,8 +106,8 @@
 
                     <div>
                         <a class="nav-link text-white" href="#">
-                            <i class="fa-solid fa-gear"></i>
-                            <span class="d-none d-lg-inline-block">Admin</span>
+                          <i class="fa-solid fa-gear"></i>
+                          <span class="d-none d-lg-inline-block">Admin</span>
                         </a>
                     </div>
                 </ul>
@@ -105,80 +119,83 @@
             <!--MAIN-->
             <div class="container-fluid main overflow-x-hidden overflow-auto p-0">
 
-                <div class="container-fluid blue-bar px-3 py-4">
-                    <div class="row text-white d-flex justify-content-between flex-wrap">
-                        <div class="col-md-5 p-3 p-md-0">
-                            <div class="w-100">
-                                <h1 class="d-inline-block text-white">Boolean</h1>
-                                <span class="badge text-bg-dark">Piano blaze</span>
-                            </div>
-                            <div>
-                                <span class="badge text-bg-dark">3 App</span>
-                                <span><i class="fa-solid fa-arrow-right"></i></span>
-
-                                <div class="d-inline-block d-xl-none"> 
-                                    <span class="badge text-bg-dark"><i class="fa-solid fa-plus"></i></span>
-                                </div>
-
-                                <div class="d-none d-xl-inline-block">
-                                    <span class="badge text-bg-dark">Boolean mobile app</span>
-                                    <span class="badge text-bg-dark">Boolean web app</span>
-                                    <span class="badge text-bg-dark">Boolean blog app</span>
-                                </div>
-
-                            </div>
+              <!--BLUE BAR-->
+              <div class="container-fluid blue-bar px-4 py-4">
+                <div class="row text-white d-flex justify-content-between flex-wrap">
+                    <div class="col-md-5 p-3 p-md-0">
+                        <div class="w-100">
+                            <h1 class="d-inline-block text-white">Boolean</h1>
+                            <span class="badge text-bg-dark">Piano blaze</span>
                         </div>
-                        <div class="col-md-4 p-3 p-md-0">
-                            <span >Studenti online negli ultimi 30 minuti</span>
-                            <span class="d-block fs-1">125</span>
-                        </div>
-                        <div class="col-md-3 p-3 p-md-0">
-                            <span>Nuovo Studente</span>
-                            <button type="button" class="btn btn-primary ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id="plus-student"><i class="fa-solid fa-plus"></i></button>
+                        <div>
+                            <span class="badge text-bg-dark">3 App</span>
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
 
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="d-inline-block d-xl-none"> 
+                                <span class="badge text-bg-dark"><i class="fa-solid fa-plus"></i></span>
+                            </div>
+
+                            <div class="d-none d-xl-inline-block">
+                                <span class="badge text-bg-dark">Boolean mobile app</span>
+                                <span class="badge text-bg-dark">Boolean web app</span>
+                                <span class="badge text-bg-dark">Boolean blog app</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-3 p-md-0">
+                        <span >Studenti online negli ultimi 30 minuti</span>
+                        <span class="d-block fs-1">125</span>
+                    </div>
+                      <div class="col-md-3 p-3 p-md-0">
+                          <span>Nuovo Studente</span>
+                          <button type="button" class="btn btn-primary ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id="plus-student"><i class="fa-solid fa-plus"></i></button>
+
+                          <!--OFFCANVAS-->
+                          <div class="offcanvas offcanvas-end overflow-auto" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                                 <div class="container p-3">
                                     <div class="row">
                                       <div class="col">
                                         <h3>Inserisci un nuovo studente</h3>
                                       </div>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
 
                                     <form action="">
                                       <div class="row">
-                                          <div class="col">
+                                          <div class="col-md-6">
                                               <label for="name">Name</label>
                                               <input type="text" class="form-control" id="name">
                                           </div>
-                                          <div class="col">
+                                          <div class="col-md-6">
                                               <label for="surname">Cognome</label>
                                               <input type="text" class="form-control" id="surname"> 
                                           </div>
                                       </div>
 
                                       <div class="row">
-                                          <div class="col">
+                                          <div class="col-md-6">
                                               <label for="Email">Email</label>
                                               <div class="input-group mb-3">
                                                   <span class="input-group-text" id="Email">@</span>
                                                   <input type="text" class="form-control" aria-label="Username" aria-describedby="Email">
                                               </div>
                                           </div>
-                                          <div class="col">
+                                          <div class="col-md-6">
                                               <label for="password">Password</label>
                                               <input type="text" class="form-control" id="password">
                                           </div>
                                       </div>
 
                                       <div class="row">
-                                          <div class="col">
+                                          <div class="col-md-6">
                                               <label for="Indirizzo-Email">Indirizzo Email</label>
                                               <div class="input-group mb-3">
                                                   <span class="input-group-text" id="Indirizzo-Email">@</span>
                                                   <input type="text" class="form-control" aria-label="Username" aria-describedby="Indirizzo-Email">
                                               </div>
                                           </div>
-                                          <div class="col">
+                                          <div class="col-md-6">
                                               <label for="password">Password</label>
                                               <input type="text" class="form-control" id="password">
                                           </div>
@@ -190,11 +207,11 @@
                                       </div>
 
                                       <div class="row py-3">
-                                        <div class="col">
+                                        <div class="col-md-3">
                                           <label for="città">Città</label>
                                           <input type="text" class="form-control" id="città">
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3 py-2 py-md-0">
                                           <label for="Stato">Stato</label>
                                           <select class="form-select" aria-label="Default select example">
                                             <option selected>Scegli...</option>
@@ -203,7 +220,7 @@
                                             <option value="3">Germani</option>
                                           </select>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                           <label for="cap">CAP</label>
                                           <input type="text" class="form-control" id="cap">
                                         </div>
@@ -232,16 +249,19 @@
                     </div>
                 </div>
 
+                <!--MAIN CONTENTS OF DASHBOARD-->
                 <div class="row px-2">
                     <div class="col">
                         <main>
                             <div class="row">
                                 <div class="col-lg-8">
                                     <div class="row p-3">
+
+                                        <!--PROSSIME CLASSI-->
                                         <div class="col-12 mb-4">
                                             <div class="card w-100" style="width: 18rem;">
                                                 <div class="card-header">
-                                                  <h2>Possime classi</h2>
+                                                  <h2>Prossime classi</h2>
                                                 </div>
                                                 <ul class="list-group list-group-flush">
                                                   <li class="list-group-item">
@@ -383,6 +403,7 @@
                                               </div>
                                         </div>
 
+                                        <!--F.A.Q.-->
                                         <div class="col-12">
                                             <div class="card w-100" style="width: 18rem;">
                                                 <div class="card-header">
@@ -392,7 +413,7 @@
                                                     <div class="accordion-item">
                                                       <h2 class="accordion-header" id="flush-headingOne">
                                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                          Come aggiungere un nuovo studente?
+                                                        Come aggiungere un nuovo studente?
                                                         </button>
                                                       </h2>
                                                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -426,6 +447,8 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="row p-3">
+
+                                        <!--TODO-->
                                         <div class="col-12 pb-4">
                                             <div class="card w-100" style="width: 18rem;">
                                                 <div class="card-header">
@@ -458,6 +481,7 @@
                                             </div>
                                         </div>
 
+                                        <!--STATS-->
                                         <div class="col-12">
                                             <div class="card w-100 p-3" style="width: 18rem;">
                                                 <div class="card w-100" style="width: 18rem;">

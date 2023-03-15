@@ -34,7 +34,7 @@ header{
 }
 
 .logo-mobile{
-    width: 50px;
+    width: 40px;
 }
 
 header nav div .fa-bell{
@@ -77,4 +77,10 @@ header nav div .fa-bell{
 #plus-student{
    background-color: #1B72E8 !important;
    border: 1px solid white !important;
+}
+
+.card .table .fa-code{
+    background-color: #F26551;
+    border-radius: 100%;
+    font-size: 20px;
 }

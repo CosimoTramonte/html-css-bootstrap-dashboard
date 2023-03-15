@@ -1,27 +1,3 @@
-.debug{
-    background-color: rgba(0, 0, 255, 0.274);
-    border: 1px solid black;
-    min-height: 100px;
-}
-
-.debug1{
-    background-color: rgba(0, 0, 255, 0.274);
-    border: 1px solid black;
-    min-height: 300px;
-}
-
-.debug2{
-    background-color: rgba(0, 0, 255, 0.274);
-    border: 1px solid black;
-    min-height: 200px;
-}
-
-.debug3{
-    background-color: rgba(0, 0, 255, 0.274);
-    border: 1px solid black;
-    min-height: 500px;
-}
-
 .fontAwesome {
     font-family: 'Helvetica', FontAwesome, sans-serif;
   }
@@ -78,6 +54,10 @@ header nav div .fa-bell{
 #plus-student{
    background-color: #1B72E8 !important;
    border: 1px solid white !important;
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 800px;
 }
 
 .card .table .fa-code{

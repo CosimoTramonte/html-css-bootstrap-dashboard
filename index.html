@@ -134,7 +134,100 @@
                         </div>
                         <div class="col-md-3 p-3 p-md-0">
                             <span>Nuovo Studente</span>
-                            <button type="button" class="btn btn-primary ms-2" id="plus-student"><i class="fa-solid fa-plus"></i></button>
+                            <button type="button" class="btn btn-primary ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id="plus-student"><i class="fa-solid fa-plus"></i></button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="container p-3">
+                                    <div class="row">
+                                      <div class="col">
+                                        <h3>Inserisci un nuovo studente</h3>
+                                      </div>
+                                    </div>
+
+                                    <form action="">
+                                      <div class="row">
+                                          <div class="col">
+                                              <label for="name">Name</label>
+                                              <input type="text" class="form-control" id="name">
+                                          </div>
+                                          <div class="col">
+                                              <label for="surname">Cognome</label>
+                                              <input type="text" class="form-control" id="surname"> 
+                                          </div>
+                                      </div>
+
+                                      <div class="row">
+                                          <div class="col">
+                                              <label for="Email">Email</label>
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text" id="Email">@</span>
+                                                  <input type="text" class="form-control" aria-label="Username" aria-describedby="Email">
+                                              </div>
+                                          </div>
+                                          <div class="col">
+                                              <label for="password">Password</label>
+                                              <input type="text" class="form-control" id="password">
+                                          </div>
+                                      </div>
+
+                                      <div class="row">
+                                          <div class="col">
+                                              <label for="Indirizzo-Email">Indirizzo Email</label>
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text" id="Indirizzo-Email">@</span>
+                                                  <input type="text" class="form-control" aria-label="Username" aria-describedby="Indirizzo-Email">
+                                              </div>
+                                          </div>
+                                          <div class="col">
+                                              <label for="password">Password</label>
+                                              <input type="text" class="form-control" id="password">
+                                          </div>
+                                      </div>
+
+                                      <div class="w-100">
+                                          <label for="Indirizzo">Indirizzo</label>
+                                          <input type="text" class="form-control" id="Indirizzo">
+                                      </div>
+
+                                      <div class="row py-3">
+                                        <div class="col">
+                                          <label for="città">Città</label>
+                                          <input type="text" class="form-control" id="città">
+                                        </div>
+                                        <div class="col">
+                                          <label for="Stato">Stato</label>
+                                          <select class="form-select" aria-label="Default select example">
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Francia</option>
+                                            <option value="3">Germani</option>
+                                          </select>
+                                        </div>
+                                        <div class="col">
+                                          <label for="cap">CAP</label>
+                                          <input type="text" class="form-control" id="cap">
+                                        </div>
+                                      </div>
+
+                                      <div class="w-100 pb-3">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                      </div>
+
+                                      <div class="form-check pb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                        <label class="form-check-label" for="flexCheckIndeterminate">
+                                          Seleziona per proseguire
+                                        </label>
+                                      </div>
+
+                                      <div>
+                                        <button type="button" class="btn btn-primary">Salva</button>
+                                        <button type="button" class="btn btn-warning fw-bolder">Svuota</button>
+                                      </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
